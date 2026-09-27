@@ -70,14 +70,51 @@ class MyProfilePage extends StatelessWidget {
           const SizedBox(width: 8),
         ],
       ),
+
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+
+            const SizedBox(height: 10),
+
+            Container(
+              width: 205,
+              height: 205,
+              decoration: const BoxDecoration(
+                color: Color(0xFFE8DCFC),
+                shape: BoxShape.circle,
+              ),
+              child: const Center(
+                child: Icon(
+                  Icons.icecream_outlined,
+                  size: 105,
+                  color: Color(0xFF25006B),
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 12),
+
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                'Ice cream is very delicious right?',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 21,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 55),
+
+
+          ],
+        ),
+      ),
     );
-
-
-
   }
 }
-
-
-
-
 
